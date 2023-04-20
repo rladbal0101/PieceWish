@@ -9,53 +9,101 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
+  <!-- SWIPER(8버전으로 진행) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./css/main.css">
+  
+  <!-- SWIPER(8버전으로 진행) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script defer src="./js/main.js"></script>
 
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <div class="inner">
       <!-- 로고 -->
-      <div class="logo">
-        <a href="javascript:void(0)">logo</a>
-      </div>
+      <a href="/" class="logo">
+        <img src="./images/logo.png" alt="Pieceofyourwish">
+      </a>
       <!-- 메뉴 -->
-      <nav>
-        <ul>
-          <li>
-            <a href="javascript:void(0)">ORDER</a>
-            <ul>
-              <li>꽃다발</li>
-              <li>꽃바구니</li>
-              <li>부케</li>
-              <li>머니박스</li>
-              <li>화병꽂이</li>
-            </ul>
+      <nav class="nav">
+        <ul class="nav__menu--main">
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">ORDER</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>꽃다발</li>
+                <li>꽃바구니</li>
+                <li>부케</li>
+                <li>머니박스</li>
+                <li>화병꽂이</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <a href="javascript:void(0)">SEASON</a>
-            <ul>
-              <li>발렌타인·화이트데이</li>
-              <li>어버이날·스승의날</li>
-              <li>빼빼로데이</li>
-              <li>크리스마스</li>
-            </ul>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">SEASON</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>발렌타인·화이트데이</li>
+                <li>어버이날·스승의날</li>
+                <li>빼빼로데이</li>
+                <li>크리스마스</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <a href="javascript:void(0)">CLASS</a>
-            <ul>
-              <li>클래스 안내</li>
-            </ul>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">CLASS</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>클래스 안내</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <span>call</span>
+          <li class="item">
+            <a href="javascript:void(0)">
+              <span class="material-icons">local_phone</span>
+            </a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="">
+    </div>
+  </section>
+
+  <!-- SLIDE -->
+  <section class="slide">
+    <div class="inner">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/basket1.jpg" alt="basket">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/vase1.jpg" alt="vase">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/bouquet1.jpg" alt="bouquet">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev">
+        <span class="material-icons">chevron_left</span>
+      </div>
+      <div class="swiper-button-next">
+        <span class="material-icons">chevron_right</span>
+      </div>
+
+    </div>
+  </section>
   
 </body>
 </html>
