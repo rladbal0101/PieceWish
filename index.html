@@ -13,9 +13,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./css/main.css">
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <!-- SWIPER(8버전으로 진행) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- YOUTUBE -->
+  <script src="./js/youtube.js"></script>
 
   <script defer src="./js/main.js"></script>
 
@@ -85,12 +91,28 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/basket1.jpg" alt="basket">
+            <p>Basket</p>
+            <span class="material-icons">add_circle</span>
           </div>
           <div class="swiper-slide">
             <img src="./images/vase1.jpg" alt="vase">
+            <p>Vase</p>
+            <span class="material-icons">add_circle</span>
           </div>
           <div class="swiper-slide">
             <img src="./images/bouquet1.jpg" alt="bouquet">
+            <p>Bouquet</p>
+            <span class="material-icons">add_circle</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/moneybox1.jpg" alt="moneybox">
+            <p>Moneybox</p>
+            <span class="material-icons">add_circle</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/handtied1.jpg" alt="handtied">
+            <p>Handtied</p>
+            <span class="material-icons">add_circle</span>
           </div>
         </div>
       </div>
@@ -104,6 +126,64 @@
 
     </div>
   </section>
-  
+
+  <!-- SEASON PRODUCT -->
+  <section class="season-product scroll-spy">
+    <div class="inner">
+      <div class="left-product">
+        <img src="./images/season1.png" alt="" class="back-to-position to-right">
+        <div class="text-group">
+          <p class="back-to-position to-right delay-1">SEASON PRODUCT</p>
+          <p class="back-to-position to-right delay-2">어버이날·스승의날 카네이션 용돈박스</p>
+        </div>
+      </div>
+      <div class="right-product">
+        <img src="./images/season2.png" alt="" class="back-to-position to-left delay-2">
+        <div class="text-group">
+          <p class="back-to-position to-left delay-3">SEASON PRODUCT</p>
+          <p class="back-to-position to-left delay-2">빼빼로데이 시즌상품</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+  <section class="youtube">
+    <div class="inner">
+      <div class="youtube__area">
+        <div id="player"></div>
+      </div>
+      <div class="youtube__cover"></div>
+    </div>
+  </section>
+
+  <!-- CLASS -->
+  <section class="class">
+    <div class="inner">
+      <div class="class-oneday">
+        <h3>Oneday</h3>
+        <img src="./images/class-oneday1.jpg" alt="Oneday Class">
+        <div class="class__contents">
+          <h4>Oneday Class</h4>
+          <ul>
+            <li>기본 바스켓 / 수국베이스(base)꽃다발 / 원형베이스(vase)어레인지</li>
+            <li>세가지 수업 중 원하시는 커리큘럼 선택 가능합니다.</li>
+            <li>하루 2수업 연강을 원하시는 경우 말씀해주세요!</li>
+            <li>oneday class는 취미반 수준의 수업으로 수강료는 재료비 포함 75,000원 입니다.</li>
+          </ul>
+          <a href="javascript:void(0)" class="btn">시간문의</a>
+        </div>
+      </div>
+      <div class="class-master">
+        <h3>Master</h3>
+        <img src="./images/class-master1.jpg" alt="Master Class">
+        <div class="class__contents">
+          <h4>Master Class</h4>
+          <p>미니, 중형, 대형, 롱앤로우 바스켓을 4주동안 제작하는 바스켓마스터 반입니다.</p>
+          <a href="javascript:void(0)" class="btn">시간문의</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
