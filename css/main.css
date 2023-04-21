@@ -54,6 +54,43 @@ a {
   transition-delay: .5s;
 }
 
+/* 모달창 */
+#modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-background);
+  opacity: 0.5;
+
+  display: none;
+}
+.modal-box {
+  width: 220px;
+  height: 100px;
+  background: antiquewhite;
+  border: 1px solid #333;
+  border-radius: 7px;
+  position: fixed;
+  top: 50%;
+  left: calc(50% - 110px);
+
+  display: none;
+
+}
+.modal-box .number {
+  text-align: center;
+  line-height: 100px;
+}
+.modal-box .material-icons {
+  color: var(--color-text);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
 /* HEADER */
 header {
   border-bottom: 1px solid #ddd;
@@ -352,4 +389,9 @@ header .nav .nav__menu--main .item .item__contents li:hover {
 .class .class__contents .btn:hover {
   color: var(--color-white);
   background-color: var(--color-background);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
 }

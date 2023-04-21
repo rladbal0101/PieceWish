@@ -69,11 +69,18 @@
             </div>
           </li>
           <li class="item">
-            <a href="javascript:void(0)">
+            <a href="javascript:void(0)" onclick="showModal()">
               <span class="material-icons">local_phone</span>
             </a>
           </li>
         </ul>
+        <!-- 모달창 -->
+        <div id="modal"></div>
+        <div class="modal-box">
+          <div class="number">문의전화 : 010-000-0000</div>
+          <span class="material-icons" onclick="hideModal()">close</span>
+        </div>
+        
       </nav>
     </div>
   </header>
@@ -171,7 +178,13 @@
             <li>하루 2수업 연강을 원하시는 경우 말씀해주세요!</li>
             <li>oneday class는 취미반 수준의 수업으로 수강료는 재료비 포함 75,000원 입니다.</li>
           </ul>
-          <a href="javascript:void(0)" class="btn">시간문의</a>
+          <a href="javascript:void(0)" class="btn" onclick="showModal()">시간문의</a>
+          <!-- 모달창 -->
+          <div id="modal"></div>
+          <div class="modal-box">
+            <div class="number">문의전화 : 010-000-0000</div>
+            <span class="material-icons" onclick="hideModal()">close</span>
+          </div>
         </div>
       </div>
       <div class="class-master">
@@ -180,10 +193,39 @@
         <div class="class__contents">
           <h4>Master Class</h4>
           <p>미니, 중형, 대형, 롱앤로우 바스켓을 4주동안 제작하는 바스켓마스터 반입니다.</p>
-          <a href="javascript:void(0)" class="btn">시간문의</a>
+          <a href="javascript:void(0)" class="btn" onclick="showModal()">시간문의</a>
+          <!-- 모달창 -->
+          <div id="modal"></div>
+          <div class="modal-box">
+            <div class="number">문의전화 : 010-000-0000</div>
+            <span class="material-icons" onclick="hideModal()">close</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <ul>
+        <li>
+          <a href="javascript:void(0)">개인정보처리방침</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">위치정보 이용약관</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">홈페이지 이용약관</a>
+        </li>
+      </ul>
+      <div>
+        <p>사업자등록번호 000-00-00000</p>
+        <p>피스오브유어위시 대표 김소현</p>
+        <p>TEL 010-000-0000</p>
+        <p>&copy; Piece Of Your Wish. All Right Reserved</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

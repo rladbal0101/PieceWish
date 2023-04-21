@@ -1,3 +1,15 @@
+// 모달창
+function showModal() {
+  document.getElementById("modal").style.display = "block";
+  document.querySelector(".modal-box").style.display = "block";
+
+}
+function hideModal() {
+  document.getElementById("modal").style.display = "none";
+  document.querySelector(".modal-box").style.display = "none";
+
+}
+
 // 프로모션 수평 슬라이드 기능
 new Swiper('.slide .swiper', {
   // direction: 'horizontal', // 수평 슬라이드(기본값)
