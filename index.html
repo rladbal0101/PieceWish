@@ -14,6 +14,10 @@
 
   <link rel="stylesheet" href="./css/main.css">
 
+  <!-- GSAP(https://cdnjs.com/) & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- ScrollMagic -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
@@ -74,21 +78,64 @@
             </a>
           </li>
         </ul>
-        <!-- 모달창 -->
-        <div id="modal"></div>
-        <div class="modal-box">
-          <div class="number">문의전화 : 010-000-0000</div>
-          <span class="material-icons" onclick="hideModal()">close</span>
+      </nav>
+    </div>
+
+    <!-- 모바일용 메뉴 -->
+    <div class="m-header">
+      <!-- 로고 -->
+      <a href="/" class="m-logo">
+        <img src="./images/logo.png" alt="Pieceofyourwish">
+      </a>
+      <!-- 햄버거 버튼 -->
+      <a href="javascript:void(0)" class="btn-hamburger">
+        <span class="material-icons">menu</span>
+      </a>
+      <!-- 메뉴 -->
+      <nav class="m-nav">
+        <a href="javascript:void(0)" class="btn-close">
+          <span class="material-icons">close</span>
+        </a>
+        <ul class="nav__menu--main">
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">ORDER</a>
+            <ul>
+              <li>꽃다발</li>
+              <li>꽃바구니</li>
+              <li>부케</li>
+              <li>머니박스</li>
+              <li>화병꽂이</li>
+            </ul>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">SEASON</a>
+              <ul>
+                <li>발렌타인·화이트데이</li>
+                <li>어버이날·스승의날</li>
+                <li>빼빼로데이</li>
+                <li>크리스마스</li>
+              </ul>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">CLASS</a>
+            <ul>
+              <li>클래스 안내</li>
+            </ul>
+          </li>
+        </ul>
+        <div>
+          <a href="javascript:void(0)">
+            <span class="material-icons">local_phone</span>
+          </a>
         </div>
-        
       </nav>
     </div>
   </header>
 
   <!-- VISUAL -->
   <section class="visual">
-    <div class="">
-    </div>
+    <img src="./images/bg-1.jpg" alt="">
+    <!-- <span>Piece of your wish</span> -->
   </section>
 
   <!-- SLIDE -->
@@ -179,12 +226,6 @@
             <li>oneday class는 취미반 수준의 수업으로 수강료는 재료비 포함 75,000원 입니다.</li>
           </ul>
           <a href="javascript:void(0)" class="btn" onclick="showModal()">시간문의</a>
-          <!-- 모달창 -->
-          <div id="modal"></div>
-          <div class="modal-box">
-            <div class="number">문의전화 : 010-000-0000</div>
-            <span class="material-icons" onclick="hideModal()">close</span>
-          </div>
         </div>
       </div>
       <div class="class-master">
@@ -194,12 +235,6 @@
           <h4>Master Class</h4>
           <p>미니, 중형, 대형, 롱앤로우 바스켓을 4주동안 제작하는 바스켓마스터 반입니다.</p>
           <a href="javascript:void(0)" class="btn" onclick="showModal()">시간문의</a>
-          <!-- 모달창 -->
-          <div id="modal"></div>
-          <div class="modal-box">
-            <div class="number">문의전화 : 010-000-0000</div>
-            <span class="material-icons" onclick="hideModal()">close</span>
-          </div>
         </div>
       </div>
     </div>
@@ -210,7 +245,7 @@
     <div class="inner">
       <ul>
         <li>
-          <a href="javascript:void(0)">개인정보처리방침</a>
+          <a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20200805&lsiSeq=213857#0000" target="_blank">개인정보처리방침</a>
         </li>
         <li>
           <a href="javascript:void(0)">위치정보 이용약관</a>
@@ -219,13 +254,30 @@
           <a href="javascript:void(0)">홈페이지 이용약관</a>
         </li>
       </ul>
-      <div>
+      <div class="info">
         <p>사업자등록번호 000-00-00000</p>
         <p>피스오브유어위시 대표 김소현</p>
         <p>TEL 010-000-0000</p>
-        <p>&copy; Piece Of Your Wish. All Right Reserved</p>
+        <p class="copyright">
+          &copy; <span class="this-year"></span> Piece Of Your Wish. All Right Reserved.
+        </p>
       </div>
     </div>
   </footer>
+
+  <!-- 모달창 -->
+  <div id="modal">
+    <div class="modal-box">
+      <div class="number">문의전화 : 010-000-0000</div>
+      <span class="material-icons" onclick="hideModal()">close</span>
+    </div>
+  </div>
+
+  <!-- SCROLL TO TOP -->
+  <div id="to-top">
+    <!-- <a href="#"> -->
+      <span class="material-icons">expand_less</span>
+    <!-- </a> -->
+  </div>
 </body>
 </html>

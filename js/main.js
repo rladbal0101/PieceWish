@@ -1,14 +1,15 @@
-// 모달창
-function showModal() {
-  document.getElementById("modal").style.display = "block";
-  document.querySelector(".modal-box").style.display = "block";
+// 햄버거 버튼
+const btnHamburger = document.querySelector('.btn-hamburger');
+const navEl = document.querySelector('.nav');
+const mobileNavEl = document.querySelector('.m-nav');
+const btnClose = document.querySelector('.btn-close');
 
-}
-function hideModal() {
-  document.getElementById("modal").style.display = "none";
-  document.querySelector(".modal-box").style.display = "none";
-
-}
+btnHamburger.addEventListener('click', function () {
+  mobileNavEl.classList.add('active');
+});
+btnClose.addEventListener('click', function () {
+  mobileNavEl.classList.remove('active');
+})
 
 // 프로모션 수평 슬라이드 기능
 new Swiper('.slide .swiper', {
@@ -41,3 +42,38 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
     .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!) - 라이브러리에서 지정한 문법으로 깊게 이해할 필요 X
 });
+
+// 현재 연도 표시
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
+
+// 모달창
+function showModal() {
+  document.getElementById("modal").style.display = "block";
+}
+function hideModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+// SCROLL TO TOP
+const toTopEl = document.querySelector('#to-top');
+
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, 0.4, {
+    scrollTo: 0 // 페이지의 0px 지점(최상단)으로 이동, ScrollToPlugin을 연결해야 사용 가능한 옵션
+  });
+});
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 500) {
+    gsap.to(toTopEl, 0.4, {
+      opacity: 1,
+      x: 0
+    });
+  } else {
+    gsap.to(toTopEl, 0.4, {
+      opacity: 0,
+      x: 100
+    });
+  }
+})
