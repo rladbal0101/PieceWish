@@ -457,8 +457,29 @@ header .nav .nav__menu--main .item .item__contents li:hover {
   color: var(--color-white);
   background-color: var(--color-background);
 }
+/* 태블릿용 */
 .class .class__contents .t-btn {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: var(--color-text-hover);
+  background-color: var(--color-background-w);
+  border: 1px solid var(--color-text-hover);
+  border-radius: 6px;
+  box-sizing: border-box;
   display: none;
+
+  position: absolute;
+  bottom: 12px;
+  left: calc(50% - 14px);
+}
+.class .class__contents .t-btn span {
+  font-size: 16px;
+}
+.class .class__contents .t-btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-background);
 }
 
 /* FOOTER */
@@ -532,27 +553,7 @@ footer .info p + p {
     display: none;
   }
   .class .class__contents .t-btn {
-    width: 28px;
-    height: 28px;
-    text-align: center;
-    line-height: 28px;
-    color: var(--color-text-hover);
-    background-color: var(--color-background-w);
-    border: 1px solid var(--color-text-hover);
-    border-radius: 6px;
-    box-sizing: border-box;
     display: block;
-
-    position: absolute;
-    bottom: 12px;
-    left: calc(50% - 14px);
-  }
-  .class .class__contents .t-btn span {
-    font-size: 16px;
-  }
-  .class .class__contents .t-btn:hover {
-    color: var(--color-white);
-    background-color: var(--color-background);
   }
   footer .inner {
     width: 480px;
@@ -600,5 +601,4 @@ footer .info p + p {
   .class .class__contents .t-btn {
     bottom: 30px;
   }
-
 }
