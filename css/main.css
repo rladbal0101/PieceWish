@@ -13,7 +13,7 @@ html {
 body {
   font-size: 14px;
 
-  height: 2500px;
+  /* height: 2500px; */
 }
 section {
   margin-top: 30px;
@@ -223,8 +223,12 @@ header .nav .nav__menu--main .item .item__contents li:hover {
 .m-header .m-nav .nav__menu--main .item ul li + li {
   margin-top: 18px;
 }
-.m-header .m-nav div .material-icons {
+.m-header .m-nav div {
+  display: flex;
+  align-items: center;
   margin-top: 60px;
+}
+.m-header .m-nav div .material-icons {
   color: var(--color-background);
 }
 
@@ -353,20 +357,17 @@ header .nav .nav__menu--main .item .item__contents li:hover {
 .youtube {
   height: 600px;
   position: relative;
-
   overflow: hidden;
 }
 .youtube .inner {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .youtube .youtube__area {
   width: 100%;
-  height: 800px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: calc(1180px / -2);
-  margin-top: calc(800px / -2);
+  height: 100%;
 }
 
 #player {
@@ -383,9 +384,6 @@ header .nav .nav__menu--main .item .item__contents li:hover {
 }
 
 /* CLASS */
-.class {
-  height: 580px;
-}
 .class .inner {
   display: flex;
 }
@@ -416,33 +414,28 @@ header .nav .nav__menu--main .item .item__contents li:hover {
   height: 100%;
   position: absolute;
   top: 0;
+
   display: none;
 }
 .class .class-oneday:hover .class__contents,
 .class .class-master:hover .class__contents {
   display: block;
 }
-.class .class__contents h4 {
+.class .class__contents .contents-title {
   width: 100%;
   font-size: 20px;
   text-align: center;
   position: absolute;
   top: 25%;
 }
-.class .class__contents ul {
-  width: 100%;
+.class .class__contents .contents-contents {
+  width: calc(100% - 70px);
   margin-left: 40px;
   position: absolute;
-  bottom: 35%;
+  top: 50%;
 }
-.class .class__contents ul > li + li {
+.class .class__contents .contents-contents > li + li {
   margin-top: 20px;
-}
-.class .class__contents p {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 50%;
 }
 .class .class__contents .btn {
   width: 80px;
@@ -463,6 +456,9 @@ header .nav .nav__menu--main .item .item__contents li:hover {
 .class .class__contents .btn:hover {
   color: var(--color-white);
   background-color: var(--color-background);
+}
+.class .class__contents .t-btn {
+  display: none;
 }
 
 /* FOOTER */
@@ -518,9 +514,68 @@ footer .info p + p {
 }
 
 /* 반응형 */
+/* 태블릿 */
 @media screen and (max-width: 1023px) {
-  
+  .season-product .inner {
+    flex-direction: column;    
+  }
+  .class .inner h3 {
+    font-size: 25px;
+  }
+  .class .class__contents .contents-title {
+    font-size: 16px;
+  }
+  .class .class__contents .contents-contents {
+    font-size: 12px;
+  }
+  .class .class__contents .btn {
+    display: none;
+  }
+  .class .class__contents .t-btn {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: var(--color-text-hover);
+    background-color: var(--color-background-w);
+    border: 1px solid var(--color-text-hover);
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: block;
+
+    position: absolute;
+    bottom: 12px;
+    left: calc(50% - 14px);
+  }
+  .class .class__contents .t-btn span {
+    font-size: 16px;
+  }
+  .class .class__contents .t-btn:hover {
+    color: var(--color-white);
+    background-color: var(--color-background);
+  }
+  footer .inner {
+    width: 480px;
+    margin: auto;
+    font-size: 12px;
+  }
+  footer .inner ul {
+    justify-content: center;
+  }
+  footer .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .info p + p {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  footer .info p:last-child {
+    margin-top: 10px;
+  }
 }
+/* 모바일 */
 @media screen and (max-width: 767px) {
   header .inner {
     display: none;
@@ -532,4 +587,18 @@ footer .info p + p {
     margin-top: 50px;
     height: 250px;
   }
+  .youtube {
+    height: 300px;
+  }
+  .class .class__contents .contents-title {
+    text-align: center;
+    top: 40%;
+  }
+  .class .class__contents .contents-contents {
+    display: none;
+  }
+  .class .class__contents .t-btn {
+    bottom: 30px;
+  }
+
 }
