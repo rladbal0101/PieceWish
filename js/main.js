@@ -11,7 +11,18 @@ btnClose.addEventListener('click', function () {
   mobileNavEl.classList.remove('active');
 })
 
-// 프로모션 수평 슬라이드 기능
+// 순차적으로 VISUAL 섹션 내 요소 보이기
+// 나타날 요소(.fade-in)들을 찾기
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+
+fadeEls.forEach(function (fadeEl, index) {
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.6,
+    opacity: 1    
+  });
+});
+
+// 수평 슬라이드 기능
 new Swiper('.slide .swiper', {
   // direction: 'horizontal', // 수평 슬라이드(기본값)
   loop: true, // 반복 재생 여부

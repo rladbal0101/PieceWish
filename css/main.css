@@ -6,6 +6,7 @@ html {
   --color-text-hover: #169d3c;
   --color-background: #b0d2b8;
   --color-background-w: #f4f4f4;
+  --color-footer: #999;
   
   scroll-behavior: smooth;
 }
@@ -238,6 +239,7 @@ header .nav .nav__menu--main .item .item__contents li:hover {
   height: 420px;
   margin-top: 156px;
   overflow: hidden;
+  position: relative;
 }
 .visual img {
   width: 100%;
@@ -246,6 +248,22 @@ header .nav .nav__menu--main .item .item__contents li:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.visual span {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-white);
+  color: rgb(213, 157, 184);
+  position: absolute;
+  top: 60px;
+  right: 200px;
+}
+.visual span:last-child {
+  top: 110px;
+  right: 80px;
+}
+.visual .fade-in {
+  opacity: 0;
 }
 
 /* SLIDE */
@@ -321,6 +339,7 @@ header .nav .nav__menu--main .item .item__contents li:hover {
 /* SEASON PRODUCT */
 .season-product {
   background-color: var(--color-background-w);
+  overflow: hidden;
 }
 .season-product > .inner {
   display: flex;
@@ -457,7 +476,7 @@ header .nav .nav__menu--main .item .item__contents li:hover {
   color: var(--color-white);
   background-color: var(--color-background);
 }
-/* 태블릿용 */
+/* 태블릿, 모바일용 */
 .class .class__contents .t-btn {
   width: 28px;
   height: 28px;
@@ -485,7 +504,7 @@ header .nav .nav__menu--main .item .item__contents li:hover {
 /* FOOTER */
 footer {
   margin-top: 30px;
-  background-color: #999;
+  background-color: var(--color-footer);
 }
 footer .inner {
   padding: 40px 0 60px;
@@ -587,6 +606,15 @@ footer .info p + p {
   .visual {
     margin-top: 50px;
     height: 250px;
+  }
+  .visual span {
+    font-size: 30px;
+    top: 30px;
+    right: 120px;
+  }
+  .visual span:last-child {
+    top: 70px;
+    right: 40px;
   }
   .youtube {
     height: 300px;
