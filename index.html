@@ -212,6 +212,89 @@
     </div>
   </section>
 
+  <!-- RECOMMEND PRODUCT -->
+  <section class="recommend">
+    <div class="inner">
+      <div id="recommendedProduct">
+        <span class="recommend-title">추천제품 보러가기!</span>
+        <div class="choice-box">
+          <input type="radio" id="choice-birth" name="choice">
+          <label for="choice-birth">생일</label>
+          <input type="radio" id="choice-anniversary" name="choice">
+          <label for="choice-anniversary">기념일</label>
+          <input type="radio" id="choice-day" name="choice">
+          <label for="choice-day">__Day</label>
+          <input type="radio" id="choice-graduation" name="choice">
+          <label for="choice-graduation">졸업</label>
+          
+          <div id="birth" class="check">
+            <input type="radio" id="birth-1" name="birth">
+            <label for="birth-1">친구</label>
+            <input type="radio" id="birth-2" name="birth">
+            <label for="birth-2">연인</label>
+            <input type="radio" id="birth-3" name="birth">
+            <label for="birth-3">부모님</label>
+            <div id="birth1" class="recommend-product check">
+              <img src="./images/recommend1-1.jpg" alt="친구 생일축하 추천제품">
+            </div>
+            <div id="birth2" class="recommend-product check">
+              <img src="./images/recommend1-2.jpg" alt="연인 생일축하 추천제품">
+            </div>
+            <div id="birth3" class="recommend-product check">
+              <img src="./images/recommend1-3.jpg" alt="부모님 생신축하 추천제품">
+            </div>
+          </div>
+          <div id="anniversary" class="check">
+            <input type="radio" id="anniversary-1" name="anniversary">
+            <label for="anniversary-1">어버이날</label>
+            <input type="radio" id="anniversary-2" name="anniversary">
+            <label for="anniversary-2">결혼기념일</label>
+            <div id="anniversary1" class="recommend-product check">
+              <img src="./images/recommend2-1.jpg" alt="어버이날 추천제품">
+            </div>
+            <div id="anniversary2" class="recommend-product check">
+              <img src="./images/recommend2-2.jpg" alt="결혼기념일 추천제품">
+            </div>
+          </div>
+          <div id="day" class="check">
+            <input type="radio" id="day-1" name="day">
+            <label for="day-1">발렌타인·화이트데이</label>
+            <input type="radio" id="day-2" name="day">
+            <label for="day-2">로즈데이</label>
+            <input type="radio" id="day-3" name="day">
+            <label for="day-3">빼빼로데이</label>
+            <div id="day1" class="recommend-product check">
+              <img src="./images/recommend3-1.jpg" alt="발렌타인·화이트데이 추천제품">
+            </div>
+            <div id="day2" class="recommend-product check">
+              <img src="./images/recommend3-2.jpg" alt="로즈데이 추천제품">
+            </div>
+            <div id="day3" class="recommend-product check">
+              <img src="./images/recommend3-3.jpg" alt="빼빼로데이 추천제품">
+            </div>
+          </div>
+          <div id="graduation" class="check">
+            <input type="radio" id="graduation-1" name="graduation">
+            <label for="graduation-1">유치원</label>
+            <input type="radio" id="graduation-2" name="graduation">
+            <label for="graduation-2">초·중·고</label>
+            <input type="radio" id="graduation-3" name="graduation">
+            <label for="graduation-3">대학·대학원</label>
+            <div id="graduation1" class="recommend-product check">
+              <img src="./images/recommend4-1.jpg" alt="유치원 졸업축하 추천제품">
+            </div>
+            <div id="graduation2" class="recommend-product check">
+              <img src="./images/recommend4-2.jpg" alt="초·중·고 졸업축하 추천제품">
+            </div>
+            <div id="graduation3" class="recommend-product check">
+              <img src="./images/recommend4-3.jpg" alt="대학·대학원 졸업축하 추천제품">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CLASS -->
   <section class="class">
     <div class="inner">
@@ -244,54 +327,6 @@
           <a href="javascript:void(0)" class="t-btn" onclick="showModal()">
             <span class="material-icons">local_phone</span>
           </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RECOMMEND -->
-  <section class="recommend">
-    <div class="inner">
-      <div id="recommendedProduct">
-        <div class="recommend-title">추천제품</div>
-        <div class="recommend-contents">
-          <span class="choice-box">
-            <input type="radio" id="choice1" name="choice">
-            <label for="choice1">졸업</label>
-            <input type="radio" id="choice2" name="choice">
-            <label for="choice2">생일</label>
-            <input type="radio" id="choice3" name="choice">
-            <label for="choice3">기념일</label>
-            <input type="radio" id="choice4" name="choice">
-            <label for="choice4">__Day</label>
-          </span>
-        </div>
-        <div class="recommend-contents">
-          <span class="choice-box">
-            <label><input type="radio" name=""> 유치원생</label>
-            <label><input type="radio" name=""> 초·중·고생</label>
-            <label><input type="radio" name=""> 대학·대학원생</label>
-          </span>
-        </div>
-        <div class="recommend-contents">
-          <span class="choice-box">
-            <label><input type="radio" name=""> 10대</label>
-            <label><input type="radio" name=""> 20~30대</label>
-            <label><input type="radio" name=""> 40대~</label>
-          </span>
-        </div>
-        <div class="recommend-contents">
-          <span class="choice-box">
-            <label><input type="radio" name=""> 어버이날</label>
-            <label><input type="radio" name=""> 결혼기념일</label>
-          </span>
-        </div>
-        <div class="recommend-contents">
-          <span class="choice-box">
-            <label><input type="radio" name=""> 발렌타인·화이트데이</label>
-            <label><input type="radio" name=""> 로즈데이</label>
-            <label><input type="radio" name=""> 빼빼로데이</label>
-          </span>
         </div>
       </div>
     </div>
@@ -332,9 +367,7 @@
 
   <!-- SCROLL TO TOP -->
   <div id="to-top">
-    <!-- <a href="#"> -->
-      <span class="material-icons">expand_less</span>
-    <!-- </a> -->
+    <span class="material-icons">expand_less</span>
   </div>
 </body>
 </html>
