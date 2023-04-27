@@ -98,3 +98,31 @@ recommedTitle.addEventListener('click', function () {
     display: 'block'
   });
 });
+
+// 꽃송이 만들기
+const body = document.querySelector('body');
+const MIN_DURATION = 10;
+
+function makeFlowerflake() {
+  const flowerflake = document.createElement('div');
+  const delay = Math.random() * 10;
+  const initialOpacity = Math.random();
+  const duration = Math.random() * 20 + MIN_DURATION;
+
+  flowerflake.classList.add('flowerflake');
+  flowerflake.style.left = `${Math.random() * window.screen.width}px`;
+  flowerflake.style.animationDelay = `${delay}s`;
+  flowerflake.style.opacity = initialOpacity;
+  flowerflake.style.animation = `fall ${duration}s linear`;
+
+  body.appendChild(flowerflake);
+
+  setTimeout(() => {
+    body.removeChild(flowerflake);
+    makeFlowerflake();
+  }, (duration + delay) * 1000);
+}
+
+for (let index = 0; index < 50; index++) {
+  setTimeout(makeFlowerflake, 500 * index);
+}

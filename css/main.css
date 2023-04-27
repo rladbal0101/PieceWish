@@ -635,6 +635,33 @@ footer .info p + p {
   font-size: 30px;
 }
 
+.flowerflake {
+  width: 36px;
+  height: 23px;
+  background-image: url('../images/flowerflake.JPG');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  z-index: 99;
+}
+
+@keyframes fall {
+  from {}
+  10% { transform: translateY(10vh) translateX(-5px) rotate(10deg); }
+  20% { transform: translateY(20vh) translateX(5px) rotate(-10deg); }
+  30% { transform: translateY(30vh) translateX(-5px) rotate(10deg); }
+  40% { transform: translateY(40vh) translateX(5px) rotate(-10deg); }
+  50% { transform: translateY(50vh) translateX(-5px) rotate(10deg); }
+  60% { transform: translateY(60vh) translateX(5px) rotate(-10deg); }
+  70% { transform: translateY(70vh) translateX(-5px) rotate(10deg); }
+  80% { transform: translateY(80vh) translateX(5px) rotate(-10deg); }
+  90% { transform: translateY(90vh) translateX(-5px) rotate(10deg); }
+  to {
+    transform: translateY(100vh) translateX(5px) rotate(-10deg);
+    opacity: 0;
+  }
+}
+
 /* 반응형 */
 /* 태블릿 */
 @media screen and (max-width: 1023px) {
