@@ -155,7 +155,10 @@ header .nav .nav__menu--main .item .item__contents li {
   margin-right: 60px;
   /* cursor: pointer; */
 }
-header .nav .nav__menu--main .item .item__contents li:hover {
+header .nav .nav__menu--main .item .item__contents li a {
+  color: var(--color-text);
+}
+header .nav .nav__menu--main .item .item__contents li a:hover {
   color: var(--color-text-hover);
 }
 

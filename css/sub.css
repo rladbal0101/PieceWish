@@ -1,4 +1,89 @@
-.order {
-  height: 600px;
+/* ORDER */
+.sub__order {
+  margin-top: 156px;
+}
+.sub__order .inner {
+  /* background-color: orange; */
+}
+.sub__order .inner h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-gr);
+  text-align: center;
+  padding: 50px 0;
+}
+.sub__order .inner > div {
+  text-align: center;
+}
+.sub__order .inner > div a {
+  width: 100px;
+  font-weight: 600;
+  color: var(--color-text-hover);
+}
+.sub__order .inner img {
+  width: 100%;
+}
+.sub__order .inner .order__contents {
+  padding-top: 30px;
+}
+.sub__order .inner .order__contents li {
+  position: relative;
+}
+.sub__order .inner .order__contents h4 {
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 40px 0 30px;
+}
+.sub__order .inner .order__contents p {
+  margin-top: 20px;
+  line-height: 1.4;
+}
+.order__contents .swiper {
+  width: 100%;
+}
+.order__contents .swiper-slide {
+  position: relative;
+}
+.order__contents .swiper-slide img {
+  width: 100%;
+}
+.order__contents .swiper-button-prev::after,
+.order__contents .swiper-button-next::after {
+  display: none;
+}
+.order__contents .swiper-button-prev .material-icons,
+.order__contents .swiper-button-next .material-icons {
+  font-size: 40px;
+  color: var(--color-white);
+  display: block;
+}
+.order__contents .swiper-button-prev:hover .material-icons,
+.order__contents .swiper-button-next:hover .material-icons {
+  color: var(--color-text-hover);
+}
+/* 주문영역 */
+#order {
+  margin-top: 30px;
+  font-weight: 600;
+  color: var(--color-text-gr);
+  text-align: center;
+  padding: 30px 0;
+
+  height: 400px;
   background-color: orange;
+}
+
+/* 반응형 */
+/* 태블릿 */
+@media screen and (max-width: 1023px) {
+
+}
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  .sub__order {
+    margin-top: 50px;
+  }
+  .sub__order .inner h3 {
+    font-size: 14px;
+  }
 }

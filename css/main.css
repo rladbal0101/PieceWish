@@ -32,22 +32,11 @@
 }
 
 /* SLIDE */
-/* .slide {
-  max-height: 380px;
-} */
 .slide .inner {
   height: 100%;
-  /* display: flex;
-  justify-content: center;
-  position: relative; */
-  /* overflow: hidden; */
-  
 }
 .slide .swiper {
   width: 100%;
-  /* height: 380px; */
-  /* flex-shrink: 0; */
-
 }
 .slide .swiper-slide {
   opacity: 0.5;
@@ -88,10 +77,6 @@
   color: var(--color-white);
   display: none;
 }
-.slide .swiper-button-prev:hover .material-icons,
-.slide .swiper-button-next:hover .material-icons {
-  color: var(--color-text-hover);
-}
 .slide .swiper-button-prev::after,
 .slide .swiper-button-next::after {
   display: none;
@@ -99,6 +84,10 @@
 .slide .swiper-button-prev .material-icons,
 .slide .swiper-button-next .material-icons {
   display: block;
+}
+.slide .swiper-button-prev:hover .material-icons,
+.slide .swiper-button-next:hover .material-icons {
+  color: var(--color-text-hover);
 }
 
 /* SEASON PRODUCT */
@@ -343,19 +332,11 @@
   background-color: var(--color-background);
 }
 
-/* FLOATING FLOWER */
-/* .floating-flower {
-  position: absolute;
-} */
-/* .floating-flower img {
-  width: 50px;
-  height: 50px;
-} */
-
+/* 꽃송이 만들기 */
 .flowerflake {
-  width: 36px;
-  height: 23px;
-  background-image: url('../images/flowerflake.JPG');
+  width: 32px;
+  height: 22px;
+  background-image: url('../images/flowerflake.png');
   background-repeat: no-repeat;
   position: absolute;
   top: -20px;
