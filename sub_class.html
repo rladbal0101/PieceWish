@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piece of your wish</title>
+  
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  
+    <!-- SWIPER(8버전으로 진행) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+  
+    <!-- GSAP(https://cdnjs.com/) & ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- SWIPER(8버전으로 진행) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/main.js"></script>
+  
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="inner">
+        <!-- 로고 -->
+        <a href="/" class="logo">
+          <img src="./images/logo.png" alt="Pieceofyourwish">
+        </a>
+        <!-- 메뉴 -->
+        <nav class="nav">
+          <ul class="nav__menu--main">
+            <li class="item">
+              <a href="./sub.html" class="item__name">ORDER</a>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li><a href="./sub.html#handtied">꽃다발</a></li>
+                  <li><a href="./sub.html#basket">꽃바구니</a></li>
+                  <li><a href="./sub.html#bouquet">부케</a></li>
+                  <li><a href="./sub.html#moneybox">머니박스</a></li>
+                  <li><a href="./sub.html#vase">화병꽂이</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <a href="javascript:void(0)" class="item__name">SEASON</a>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
+                  <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
+                  <li><a href="javascript:void(0)">빼빼로데이</a></li>
+                  <li><a href="javascript:void(0)">크리스마스</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <a href="javascript:void(0)" class="item__name">CLASS</a>
+              <div class="item__contents">
+                <ul class="inner">
+                  <li><a href="javascript:void(0)">클래스 안내</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <a href="javascript:void(0)" onclick="showModal()">
+                <span class="material-icons">local_phone</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+      <!-- 모바일용 메뉴 -->
+      <div class="m-header">
+        <!-- 로고 -->
+        <a href="/" class="m-logo">
+          <img src="./images/logo.png" alt="Pieceofyourwish">
+        </a>
+        <!-- 햄버거 버튼 -->
+        <a href="javascript:void(0)" class="btn-hamburger">
+          <span class="material-icons">menu</span>
+        </a>
+        <!-- 메뉴 -->
+        <nav class="m-nav">
+          <a href="javascript:void(0)" class="btn-close">
+            <span class="material-icons">close</span>
+          </a>
+          <ul class="nav__menu--main">
+            <li class="item">
+              <a href="./sub.html" class="item__name">ORDER</a>
+              <ul>
+                <li><a href="./sub.html#handtied">꽃다발</a></li>
+                <li><a href="./sub.html#basket">꽃바구니</a></li>
+                <li><a href="./sub.html#bouquet">부케</a></li>
+                <li><a href="./sub.html#moneybox">머니박스</a></li>
+                <li><a href="./sub.html#vase">화병꽂이</a></li>
+              </ul>
+            </li>
+            <li class="item">
+              <a href="javascript:void(0)" class="item__name">SEASON</a>
+                <ul>
+                  <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
+                  <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
+                  <li><a href="javascript:void(0)">빼빼로데이</a></li>
+                  <li><a href="javascript:void(0)">크리스마스</a></li>
+                </ul>
+            </li>
+            <li class="item">
+              <a href="javascript:void(0)" class="item__name">CLASS</a>
+              <ul>
+                <li><a href="javascript:void(0)">클래스 안내</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <a href="javascript:void(0)">
+              <span class="material-icons">local_phone</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+  
+</body>
+</html>

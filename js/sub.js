@@ -98,8 +98,13 @@ function categoryChange(e) {
   const size_basket_price = ["55000", "", "100000", "150000"];
 
   const size_bouquet = ["상담 후 결정 됩니다(최소 2주전 주문)"];
+  const size_bouquet_price = [""];
+
   const size_moneybox = ["사각 55,000원", "원형 55,000원"];
-  const size_vase = ["미니 40,000 ~ 50,000원", "중형 55,000 ~ 80,000원"];
+  const size_moneybox_price = ["55000", "55000"];
+
+  const size_vase = ["미니 40,000원", "중형 55,000원" ,"대형 80,000원"];
+  const size_vase_price = ["40000", "55000", "80000"];
 
   let data;
   let dataPrice;
@@ -109,10 +114,18 @@ function categoryChange(e) {
   } else if (e.value == "basket") {
     data = size_basket;
     dataPrice = size_basket_price;
+  } else if (e.value == "bouquet") {
+    data = size_bouquet;
+    dataPrice = size_bouquet_price;
+  } 
+  else if (e.value == "moneybox") {
+    data = size_moneybox;
+    dataPrice = size_moneybox_price;
   }
-  else if (e.value == "bouquet") data = size_bouquet;
-  else if (e.value == "moneybox") data = size_moneybox;
-  else if (e.value == "vase") data = size_vase;
+  else if (e.value == "vase") {
+    data = size_vase;
+    dataPrice = size_vase_price;
+  }
 
   sizeSelectBox.options.length = 1;
 

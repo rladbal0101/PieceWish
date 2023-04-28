@@ -1,16 +1,3 @@
-// 햄버거 버튼
-const btnHamburger = document.querySelector('.btn-hamburger');
-const navEl = document.querySelector('.nav');
-const mobileNavEl = document.querySelector('.m-nav');
-const btnClose = document.querySelector('.btn-close');
-
-btnHamburger.addEventListener('click', function () {
-  mobileNavEl.classList.add('active');
-});
-btnClose.addEventListener('click', function () {
-  mobileNavEl.classList.remove('active');
-})
-
 // 순차적으로 VISUAL 섹션 내 요소 보이기
 // 나타날 요소(.fade-in)들을 찾기
 const fadeEls = document.querySelectorAll('.visual .fade-in');
@@ -57,37 +44,6 @@ spyEls.forEach(function (spyEl) {
 // 현재 연도 표시
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
-
-// 모달창
-function showModal() {
-  document.getElementById("modal").style.display = "block";
-}
-function hideModal() {
-  document.getElementById("modal").style.display = "none";
-}
-
-// SCROLL TO TOP
-const toTopEl = document.querySelector('#to-top');
-
-toTopEl.addEventListener('click', function () {
-  gsap.to(window, 0.4, {
-    scrollTo: 0 // 페이지의 0px 지점(최상단)으로 이동, ScrollToPlugin을 연결해야 사용 가능한 옵션
-  });
-});
-
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 500) {
-    gsap.to(toTopEl, 0.4, {
-      opacity: 1,
-      x: 0
-    });
-  } else {
-    gsap.to(toTopEl, 0.4, {
-      opacity: 0,
-      x: 100
-    });
-  }
-})
 
 // RECOMMEND
 const recommedTitle = document.querySelector('.recommend-title');
