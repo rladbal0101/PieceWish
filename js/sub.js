@@ -83,3 +83,30 @@ new Swiper('.order__contents .vase .swiper', {
     prevEl: '.order__contents .vase .swiper-button-prev',
   },
 });
+
+// 주문영역 select box 선택에 따른 두번째 box 변화
+function categoryChange(e) {
+  var size_handtied = ["미니 30,000원", "기본 50,000원", "중형 60,000 ~ 100,000원", "대형 100,000 ~ 300,000원"];
+  var size_basket = ["미니 55,000원", "중형 75,000 ~ 85,000원", "대형 100,000원", "프리미엄 150,000원"];
+  var size_bouquet = ["상담 후 결정 됩니다(최소 2주전 주문)"];
+  var size_moneybox = ["사각 55,000원", "원형 55,000원"];
+  var size_vase = ["미니 40,000 ~ 50,000원", "중형 55,000 ~ 80,000원"];
+  var target = document.getElementById("size");
+
+  if (e.value == "handtied") var d = size_handtied;
+  else if (e.value == "basket") var d = size_basket;
+  else if (e.value == "bouquet") var d = size_bouquet;
+  else if (e.value == "moneybox") var d = size_moneybox;
+  else if (e.value == "vase") var d = size_vase;
+
+  target.options.length = 0;
+
+  for (x in d) {
+    var opt = document.createElement("option");
+    opt.valur = d[x];
+    opt.innerHTML = d[x];
+    target.appendChild(opt);
+  }
+}
+
+// document.querySelector()

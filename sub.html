@@ -146,16 +146,13 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./images/handtied1.jpg" alt="handtied1">
+                <img src="./images/order-handtied1.jpg" alt="handtied1">
               </div>
               <div class="swiper-slide">
-                <img src="./images/handtied2.jpg" alt="handtied2">
+                <img src="./images/order-handtied2.jpg" alt="handtied2">
               </div>
               <div class="swiper-slide">
-                <img src="./images/handtied3.jpg" alt="handtied3">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/handtied4.jpg" alt="handtied4">
+                <img src="./images/order-handtied3.jpg" alt="handtied3">
               </div>
             </div>
           </div>
@@ -172,13 +169,13 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./images/basket1.jpg" alt="basket1">
+                <img src="./images/order-basket1.jpg" alt="basket1">
               </div>
               <div class="swiper-slide">
-                <img src="./images/basket2.jpg" alt="basket2">
+                <img src="./images/order-basket2.jpg" alt="basket2">
               </div>
               <div class="swiper-slide">
-                <img src="./images/basket3.jpg" alt="basket3">
+                <img src="./images/order-basket3.jpg" alt="basket3">
               </div>
             </div>
           </div>
@@ -195,13 +192,22 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./images/bouquet1.jpg" alt="bouquet1">
+                <img src="./images/order-bouquet1.jpg" alt="bouquet1">
               </div>
               <div class="swiper-slide">
-                <img src="./images/bouquet2.jpg" alt="bouquet2">
+                <img src="./images/order-bouquet2.jpg" alt="bouquet2">
               </div>
               <div class="swiper-slide">
-                <img src="./images/bouquet3.jpg" alt="bouquet3">
+                <img src="./images/order-bouquet3.jpg" alt="bouquet3">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/order-bouquet4.jpg" alt="bouquet4">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/order-bouquet5.jpg" alt="bouquet5">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/order-bouquet6.jpg" alt="bouquet6">
               </div>
             </div>
           </div>
@@ -218,13 +224,16 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./images/moneybox1.jpg" alt="moneybox1">
+                <img src="./images/order-moneybox1.jpg" alt="moneybox1">
               </div>
               <div class="swiper-slide">
-                <img src="./images/moneybox2.jpg" alt="moneybox2">
+                <img src="./images/order-moneybox2.jpg" alt="moneybox2">
               </div>
               <div class="swiper-slide">
-                <img src="./images/moneybox3.jpg" alt="moneybox3">
+                <img src="./images/order-moneybox3.jpg" alt="moneybox3">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/order-moneybox4.jpg" alt="moneybox4">
               </div>
             </div>
           </div>
@@ -241,16 +250,22 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./images/vase1.jpg" alt="vase1">
+                <img src="./images/order-vase1.jpg" alt="vase1">
               </div>
               <div class="swiper-slide">
-                <img src="./images/vase2.jpg" alt="vase2">
+                <img src="./images/order-vase2.jpg" alt="vase2">
               </div>
               <div class="swiper-slide">
-                <img src="./images/vase3.jpg" alt="vase3">
+                <img src="./images/order-vase3.jpg" alt="vase3">
               </div>
               <div class="swiper-slide">
-                <img src="./images/vase4.jpg" alt="vase4">
+                <img src="./images/order-vase4.jpg" alt="vase4">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/order-vase5.jpg" alt="vase5">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/order-vase6.jpg" alt="vase6">
               </div>
             </div>
           </div>
@@ -263,9 +278,40 @@
           <p>미니 베이스는 화병 포함 상품으로 언제든지 구매 가능합니다. 원하시는 색감과 사이즈 선택 후 주문 가능합니다.</p>
         </li>
       </ul>
+      <div class="info">여러 상품 주문시 문의바랍니다.</div>
       <!-- 주문영역 -->
       <div id="order">
         <h4>ORDER</h4>
+        <div class="input-group">
+          <div class="label-margin">
+            <label for="">필수선택</label>
+          </div>
+          <select name="product" id="product" class="select-box" onchange="categoryChange(this)">
+            <option selected disabled>상품선택</option>
+            <option value="handtied">Handtied</option>
+            <option value="basket">Basket</option>
+            <option value="bouquet">Bouquet</option>
+            <option value="moneybox">Moneybox</option>
+            <option value="vase">Vase</option>
+          </select>
+          <select name="size" id="size" class="select-box">
+            <option selected disabled>사이즈</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <div class="label-margin">
+            <label for="">메시지카드(선택)</label>
+          </div>
+          <input type="text" class="message select-box" placeholder="30자 이내로 입력하세요" maxlength="30">
+        </div>
+        <div class="total-price">
+          <div class="total-price__title">총 상품 금액</div>
+          <div class="total-price__price">50,000원</div>
+          <button>주문하기</button>
+        </div>
+        <!-- test -->
+      
+        
       </div>
     </div>
   </section>
