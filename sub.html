@@ -294,7 +294,7 @@
             <option value="moneybox">Moneybox</option>
             <option value="vase">Vase</option>
           </select>
-          <select name="size" id="size" class="select-box">
+          <select name="size" id="size" class="select-box" onchange="sizeChange(this)">
             <option selected disabled>사이즈</option>
           </select>
         </div>
@@ -306,7 +306,7 @@
         </div>
         <div class="total-price">
           <div class="total-price__title">총 상품 금액</div>
-          <div class="total-price__price">50,000원</div>
+          <div class="total-price__price">0원</div>
           <button>주문하기</button>
         </div>
         <!-- test -->
