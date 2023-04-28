@@ -27,6 +27,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script defer src="./js/main.js"></script>
+  <script defer src="./js/sub.js"></script>
 
 </head>
 <body>
@@ -44,11 +45,11 @@
             <a href="./sub.html" class="item__name">ORDER</a>
             <div class="item__contents">
               <ul class="inner">
-                <li>꽃다발</li>
-                <li>꽃바구니</li>
-                <li>부케</li>
-                <li>머니박스</li>
-                <li>화병꽂이</li>
+                <li><a href="./sub.html#handtied">꽃다발</a></li>
+                <li><a href="./sub.html#basket">꽃바구니</a></li>
+                <li><a href="./sub.html#bouquet">부케</a></li>
+                <li><a href="./sub.html#moneybox">머니박스</a></li>
+                <li><a href="./sub.html#vase">화병꽂이</a></li>
               </ul>
             </div>
           </li>
@@ -56,10 +57,10 @@
             <a href="javascript:void(0)" class="item__name">SEASON</a>
             <div class="item__contents">
               <ul class="inner">
-                <li>발렌타인·화이트데이</li>
-                <li>어버이날·스승의날</li>
-                <li>빼빼로데이</li>
-                <li>크리스마스</li>
+                <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
+                <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
+                <li><a href="javascript:void(0)">빼빼로데이</a></li>
+                <li><a href="javascript:void(0)">크리스마스</a></li>
               </ul>
             </div>
           </li>
@@ -67,7 +68,7 @@
             <a href="javascript:void(0)" class="item__name">CLASS</a>
             <div class="item__contents">
               <ul class="inner">
-                <li>클래스 안내</li>
+                <li><a href="javascript:void(0)">클래스 안내</a></li>
               </ul>
             </div>
           </li>
@@ -97,28 +98,28 @@
         </a>
         <ul class="nav__menu--main">
           <li class="item">
-            <a href="javascript:void(0)" class="item__name">ORDER</a>
+            <a href="./sub.html" class="item__name">ORDER</a>
             <ul>
-              <li>꽃다발</li>
-              <li>꽃바구니</li>
-              <li>부케</li>
-              <li>머니박스</li>
-              <li>화병꽂이</li>
+              <li><a href="./sub.html#handtied">꽃다발</a></li>
+              <li><a href="./sub.html#basket">꽃바구니</a></li>
+              <li><a href="./sub.html#bouquet">부케</a></li>
+              <li><a href="./sub.html#moneybox">머니박스</a></li>
+              <li><a href="./sub.html#vase">화병꽂이</a></li>
             </ul>
           </li>
           <li class="item">
             <a href="javascript:void(0)" class="item__name">SEASON</a>
               <ul>
-                <li>발렌타인·화이트데이</li>
-                <li>어버이날·스승의날</li>
-                <li>빼빼로데이</li>
-                <li>크리스마스</li>
+                <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
+                <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
+                <li><a href="javascript:void(0)">빼빼로데이</a></li>
+                <li><a href="javascript:void(0)">크리스마스</a></li>
               </ul>
           </li>
           <li class="item">
             <a href="javascript:void(0)" class="item__name">CLASS</a>
             <ul>
-              <li>클래스 안내</li>
+              <li><a href="javascript:void(0)">클래스 안내</a></li>
             </ul>
           </li>
         </ul>
@@ -139,9 +140,8 @@
         <a href="#order">바로 주문하기!</a>
       </div>
       <!-- 상세설명 -->
-      <!-- 슬라이드 화살표 클릭시 전체 한번에 움직임, 확인하기!!!! -->
       <ul class="order__contents">
-        <li>
+        <li class="handtied">
           <h4 id="handtied">Handtied</h4>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -167,7 +167,7 @@
           </div>
           <p>꽃다발은 미니, 기본, 중형, 대형 사이즈로 원하시는 꽃이나 색감을 바탕으로 제작됩니다.</p>
         </li>
-        <li>
+        <li class="basket">
           <h4 id="basket">Basket</h4>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -190,7 +190,7 @@
           </div>
           <p>바구니는 미니, 중형, 대형, 프리미엄 사이즈로 원하시는 꽃이나 색감을 바탕으로 제작됩니다.</p>
         </li>
-        <li>
+        <li class="bouquet">
           <h4 id="bouquet">Bouquet</h4>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -213,7 +213,7 @@
           </div>
           <p>부케는 최소 2주 전 미리 주문 가능합니다. 충분한 상담 후 원하시는 부케로 제작됩니다.</p>
         </li>
-        <li>
+        <li class="moneybox">
           <h4 id="moneybox">Moneybox</h4>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -236,7 +236,7 @@
           </div>
           <p>머니박스는....</p>
         </li>
-        <li>
+        <li class="vase">
           <h4 id="vase">Vase</h4>
           <div class="swiper">
             <div class="swiper-wrapper">
