@@ -13,14 +13,15 @@ btnClose.addEventListener('click', function () {
 
 // 모바일용 메뉴 - 서브메뉴 클릭시 메뉴 닫힘
 const menuClickEls = document.querySelectorAll('.m-nav .nav__menu--main .item ul li a');
+console.log(menuClickEls);
 
-// menuClickEls.forEach(function (menuClickEl) {
-  
-// });
-// menuClickEls.addEventListener('click', function () {
-//   mobileNavEl.classList.remove('active');
-// });
+menuClickEls.forEach(function (menuClickEl, index) {
+  console.log(index, menuClickEl);
 
+  menuClickEl.addEventListener('click', function () {
+    mobileNavEl.classList.remove('active');
+  });
+});
 
 // 모달창
 function showModal() {
@@ -51,4 +52,4 @@ window.addEventListener('scroll', function () {
       x: 100
     });
   }
-})
+});

@@ -1,137 +1,274 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piece of your wish</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piece of your wish</title>
+
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   
-    <link rel="icon" href="./favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <!-- SWIPER(8버전으로 진행) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/sub_class.css">
+
+  <!-- GSAP(https://cdnjs.com/) & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
-    <!-- SWIPER(8버전으로 진행) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/sub.css">
-  
-    <!-- GSAP(https://cdnjs.com/) & ScrollToPlugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
-  
-    <!-- ScrollMagic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <!-- SWIPER(8버전으로 진행) -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/main.js"></script>
-  
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-      <div class="inner">
-        <!-- 로고 -->
-        <a href="/" class="logo">
-          <img src="./images/logo.png" alt="Pieceofyourwish">
-        </a>
-        <!-- 메뉴 -->
-        <nav class="nav">
-          <ul class="nav__menu--main">
-            <li class="item">
-              <a href="./sub.html" class="item__name">ORDER</a>
-              <div class="item__contents">
-                <ul class="inner">
-                  <li><a href="./sub.html#handtied">꽃다발</a></li>
-                  <li><a href="./sub.html#basket">꽃바구니</a></li>
-                  <li><a href="./sub.html#bouquet">부케</a></li>
-                  <li><a href="./sub.html#moneybox">머니박스</a></li>
-                  <li><a href="./sub.html#vase">화병꽂이</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="item">
-              <a href="javascript:void(0)" class="item__name">SEASON</a>
-              <div class="item__contents">
-                <ul class="inner">
-                  <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
-                  <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
-                  <li><a href="javascript:void(0)">빼빼로데이</a></li>
-                  <li><a href="javascript:void(0)">크리스마스</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="item">
-              <a href="javascript:void(0)" class="item__name">CLASS</a>
-              <div class="item__contents">
-                <ul class="inner">
-                  <li><a href="javascript:void(0)">클래스 안내</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="item">
-              <a href="javascript:void(0)" onclick="showModal()">
-                <span class="material-icons">local_phone</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-  
-      <!-- 모바일용 메뉴 -->
-      <div class="m-header">
-        <!-- 로고 -->
-        <a href="/" class="m-logo">
-          <img src="./images/logo.png" alt="Pieceofyourwish">
-        </a>
-        <!-- 햄버거 버튼 -->
-        <a href="javascript:void(0)" class="btn-hamburger">
-          <span class="material-icons">menu</span>
-        </a>
-        <!-- 메뉴 -->
-        <nav class="m-nav">
-          <a href="javascript:void(0)" class="btn-close">
-            <span class="material-icons">close</span>
-          </a>
-          <ul class="nav__menu--main">
-            <li class="item">
-              <a href="./sub.html" class="item__name">ORDER</a>
-              <ul>
+  <!-- SWIPER(8버전으로 진행) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/sub_class.js"></script>
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      <!-- 로고 -->
+      <a href="/" class="logo">
+        <img src="./images/logo.png" alt="Pieceofyourwish">
+      </a>
+      <!-- 메뉴 -->
+      <nav class="nav">
+        <ul class="nav__menu--main">
+          <li class="item">
+            <a href="./sub.html" class="item__name">ORDER</a>
+            <div class="item__contents">
+              <ul class="inner">
                 <li><a href="./sub.html#handtied">꽃다발</a></li>
                 <li><a href="./sub.html#basket">꽃바구니</a></li>
                 <li><a href="./sub.html#bouquet">부케</a></li>
                 <li><a href="./sub.html#moneybox">머니박스</a></li>
                 <li><a href="./sub.html#vase">화병꽂이</a></li>
               </ul>
-            </li>
-            <li class="item">
-              <a href="javascript:void(0)" class="item__name">SEASON</a>
-                <ul>
-                  <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
-                  <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
-                  <li><a href="javascript:void(0)">빼빼로데이</a></li>
-                  <li><a href="javascript:void(0)">크리스마스</a></li>
-                </ul>
-            </li>
-            <li class="item">
-              <a href="javascript:void(0)" class="item__name">CLASS</a>
-              <ul>
-                <li><a href="javascript:void(0)">클래스 안내</a></li>
+            </div>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">SEASON</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
+                <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
+                <li><a href="javascript:void(0)">빼빼로데이</a></li>
+                <li><a href="javascript:void(0)">크리스마스</a></li>
               </ul>
-            </li>
-          </ul>
-          <div>
-            <a href="javascript:void(0)">
+            </div>
+          </li>
+          <li class="item">
+            <a href="./sub_class.html" class="item__name">CLASS</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li><a href="./sub_class.html">클래스 안내</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" onclick="showModal()">
               <span class="material-icons">local_phone</span>
             </a>
+          </li>
+          <li class="item">
+            <a href="https://www.instagram.com/pieceofyourwish" target="_blank">
+              <img src="./images/icon-instagram.png" alt="instagram">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 모바일용 메뉴 -->
+    <div class="m-header">
+      <!-- 로고 -->
+      <a href="/" class="m-logo">
+        <img src="./images/logo.png" alt="Pieceofyourwish">
+      </a>
+      <!-- 햄버거 버튼 -->
+      <a href="javascript:void(0)" class="btn-hamburger">
+        <span class="material-icons">menu</span>
+      </a>
+      <!-- 메뉴 -->
+      <nav class="m-nav">
+        <a href="javascript:void(0)" class="btn-close">
+          <span class="material-icons">close</span>
+        </a>
+        <ul class="nav__menu--main">
+          <li class="item">
+            <a href="./sub.html" class="item__name">ORDER</a>
+            <ul>
+              <li><a href="./sub.html#handtied">꽃다발</a></li>
+              <li><a href="./sub.html#basket">꽃바구니</a></li>
+              <li><a href="./sub.html#bouquet">부케</a></li>
+              <li><a href="./sub.html#moneybox">머니박스</a></li>
+              <li><a href="./sub.html#vase">화병꽂이</a></li>
+            </ul>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">SEASON</a>
+              <ul>
+                <li><a href="javascript:void(0)">발렌타인·화이트데이</a></li>
+                <li><a href="javascript:void(0)">어버이날·스승의날</a></li>
+                <li><a href="javascript:void(0)">빼빼로데이</a></li>
+                <li><a href="javascript:void(0)">크리스마스</a></li>
+              </ul>
+          </li>
+          <li class="item">
+            <a href="./sub_class.html" class="item__name">CLASS</a>
+            <ul>
+              <li><a href="./sub_class.html">클래스 안내</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div>
+          <a href="javascript:void(0)" onclick="showModal()">
+            <span class="material-icons">local_phone</span>
+          </a>
+          <a href="https://www.instagram.com/pieceofyourwish" target="_blank">
+            <img src="./images/icon-instagram.png" alt="instagram">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CLASS -->
+  <section class="sub__class">
+    <div class="inner">
+      <h3>CLASS</h3>
+      <img src="./images/class.jpg" alt="">
+      <p>
+        안녕하세요. 피스오브유어위시입니다. <br>
+        드디어 플라워 클래스를 오픈합니다. <br>
+        피오유에서의 정식 클래스는 처음이기 때문에 전보다 더 꼼꼼히 예쁘게 준비해서 넉넉히 알려드리겠습니다. <br>
+        수업은 원데이와 정규로 나눠지며 원데이는 2인까지, 정규는 1:1로 진행하는 프라이빗 수업입니다. <br>
+        정해진 날짜에 원하는 커리큘럼과 클래스 종류를 고를 수 있습니다. 
+      </p>
+    </div>
+  </section>
+
+  <!-- ONEDAY CLASS -->
+  <section class="class--oneday">
+    <div class="inner">
+      <h4 id="oneday">Oneday Class</h4>
+      <ul>
+        <li>기본바스켓 / 꽃다발 / 베이스어레인지 중 고를 수 있습니다.</li>
+        <li>하루 2수업 연강을 원하시는 경우 말씀해주세요 !</li>
+        <li>oneday class 는 취미반 수준의 수업으로 수강료는 재료비 포함 75,000원 입니다.</li>
+      </ul>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/class-oneday1.jpg" alt="oneday class1">
           </div>
-        </nav>
+          <div class="swiper-slide">
+            <img src="./images/class-oneday2.jpg" alt="oneday class2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/class-oneday3.jpg" alt="oneday class3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/class-oneday4.jpg" alt="oneday class4">
+          </div>
+        </div>
       </div>
-    </header>
-    
+      <ul class="class-time">
+        <li>5/14 일요일 12시</li>
+        <li>5/18 목요일 6시</li>
+        <li>5/25 목요일 12시</li>
+        <li>5/25 목요일 6시</li>
+        <li>5/28 일요일 12시</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MASTER CLASS -->
+  <section class="class--master">
+    <div class="inner">
+      <h4 id="master">Master Class</h4>
+      <ul>
+        <li>미니, 중형, 대형, 롱앤로우 바스켓을 4주동안 제작하는 바스켓마스터 반입니다. </li>
+        <li>피오유의 바스켓 제작법을 아낌없이 알려드릴게요 !</li>
+      </ul>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/class-master1.jpg" alt="master class1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/class-master2.jpg" alt="master class2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/class-master3.jpg" alt="master class3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/class-master4.jpg" alt="master class4">
+          </div>
+        </div>
+      </div>
+      <ul class="class-time">
+        <li>5/17 수요일 12시</li>
+        <li>5/17 수요일 6시</li>
+        <li>5/24 수요일 12시</li>
+        <li>5/24 수요일 6시</li>
+        <li>5/31 수요일 12시</li>
+        <li>5/31 수요일 6시</li>
+      </ul>
+      <p>
+        바스켓마스터 수강료는 카카오톡으로 모든 시간대 문의주세요 ! <br>
+        (인스타 dm은 못 볼 수도 있습니다.) <br>
+        현재 꽃집을 운영하시거나 창업수업을 원하시는 분들은 따로 상담하여 진행 날짜 및 커리큘럼을 정할 수 있습니다. <br>
+        피스오브유어위시에는 장기 창업반이 없으며 수강생분이 원하시는 수업 형태와, 현재 수준을 고려하여 1:1 맞춤 커리큘럼을 결정한 후 진행합니다. <br>
+        수업 상담은 토요일 제외 언제든 가능합니다. 
+      </p>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <ul>
+        <li>
+          <a href="https://www.law.go.kr/LSW/lsInfoP.do?efYd=20200805&lsiSeq=213857#0000" target="_blank">개인정보처리방침</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">위치정보 이용약관</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">홈페이지 이용약관</a>
+        </li>
+      </ul>
+      <div class="info">
+        <p>사업자등록번호 000-00-00000</p>
+        <p>피스오브유어위시 대표 김소현</p>
+        <p>TEL 010-000-0000</p>
+        <p class="copyright">
+          &copy; <span class="this-year"></span> Piece Of Your Wish. All Right Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 모달창 -->
+  <div id="modal">
+    <div class="modal-box">
+      <div class="number">문의전화 : 010-000-0000</div>
+      <span class="material-icons" onclick="hideModal()">close</span>
+    </div>
+  </div>
+
+  <!-- SCROLL TO TOP -->
+  <div id="to-top">
+    <span class="material-icons">expand_less</span>
+  </div>
   
 </body>
 </html>

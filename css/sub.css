@@ -1,9 +1,7 @@
 /* ORDER */
+/* 상세설명 */
 .sub__order {
   margin-top: 156px;
-}
-.sub__order .inner {
-  /* background-color: orange; */
 }
 .sub__order .inner h3 {
   font-size: 16px;
@@ -12,10 +10,10 @@
   text-align: center;
   padding: 50px 0;
 }
-.sub__order .inner > div {
+.sub__order .inner .order-now {
   text-align: center;
 }
-.sub__order .inner > div a {
+.sub__order .inner .order-now a {
   width: 100px;
   font-weight: 600;
   color: var(--color-text-hover);
@@ -116,7 +114,9 @@
   color: var(--color-text-hover);
   margin-top: 10px;
 }
-
+#order .total-price .btn--order {
+  margin-top: 10px;
+}
 
 /* 반응형 */
 /* 태블릿 */
@@ -125,10 +125,16 @@
 }
 /* 모바일 */
 @media screen and (max-width: 767px) {
+  section {
+    font-size: 12px;
+  }
   .sub__order {
     margin-top: 50px;
   }
   .sub__order .inner h3 {
+    font-size: 14px;
+  }
+  #order h4 {
     font-size: 14px;
   }
   #order .input-group .select-box {

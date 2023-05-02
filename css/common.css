@@ -15,8 +15,6 @@ html {
 
 body {
   font-size: 14px;
-
-  /* height: 2500px; */
 }
 section {
   margin-top: 40px;
@@ -30,6 +28,23 @@ a {
   max-width: 1180px;
   margin: 0 auto;
   position: relative;
+}
+
+.btn {
+  width: 80px;
+  height: 36px;
+  text-align: center;
+  color: var(--color-text-hover);
+  background-color: var(--color-background-w);
+  border: 1px solid var(--color-text-hover);
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-background);
 }
 
 /* BACK TO POSITIONS */
@@ -130,7 +145,7 @@ header .nav .nav__menu--main .item__name:hover {
   text-decoration: underline;
 }
 header .nav .nav__menu--main .material-icons {
-  color: var(--color-background);
+  color: var(--color-text-gr);
 }
 header .nav .nav__menu--main .item .item__contents {
   background-color: var(--color-background);
@@ -160,6 +175,9 @@ header .nav .nav__menu--main .item .item__contents li a {
 }
 header .nav .nav__menu--main .item .item__contents li a:hover {
   color: var(--color-text-hover);
+}
+header .nav .nav__menu--main .item img {
+  width: 20px;
 }
 
 /* 모바일용 메뉴 */
@@ -235,7 +253,11 @@ header .nav .nav__menu--main .item .item__contents li a:hover {
   margin-top: 60px;
 }
 .m-header .m-nav div .material-icons {
-  color: var(--color-background);
+  color: var(--color-text-gr);
+}
+.m-header .m-nav img {
+  width: 20px;
+  margin-left: 10px;
 }
 
 /* FOOTER */

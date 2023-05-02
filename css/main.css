@@ -287,27 +287,19 @@
 .class .class__contents .contents-contents > li + li {
   margin-top: 20px;
 }
-.class .class__contents .btn {
-  width: 80px;
-  height: 36px;
-  text-align: center;
-  color: var(--color-text-hover);
-  background-color: var(--color-background-w);
-  border: 1px solid var(--color-text-hover);
-  border-radius: 6px;
-  padding: 10px;
-  box-sizing: border-box;
-  display: block;
-
+.class .class__contents .btn-wrap {
   position: absolute;
   bottom: 20px;
-  left: calc(50% - 39px);
+  left: calc(50% - 82px);
 }
-.class .class__contents .btn:hover {
-  color: var(--color-white);
-  background-color: var(--color-background);
-}
+
 /* 태블릿, 모바일용 */
+.class .class__contents .t-btn-wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 12px;
+  display: none;
+}
 .class .class__contents .t-btn {
   width: 28px;
   height: 28px;
@@ -318,11 +310,17 @@
   border: 1px solid var(--color-text-hover);
   border-radius: 6px;
   box-sizing: border-box;
-  display: none;
+  display: inline-block;
 
   position: absolute;
   bottom: 12px;
-  left: calc(50% - 14px);
+}
+.class .class__contents .t-btn.left {
+  left: calc(50% - 30px);
+}
+.class .class__contents .t-btn.right {
+  right: calc(50% - 30px);
+
 }
 .class .class__contents .t-btn span {
   font-size: 16px;
@@ -378,7 +376,7 @@
   .class .class__contents .btn {
     display: none;
   }
-  .class .class__contents .t-btn {
+  .class .class__contents .t-btn-wrap {
     display: block;
   }
 }
@@ -407,6 +405,9 @@
   .youtube {
     height: 300px;
   }
+  .class .inner h3 {
+    font-size: 20px;
+  }
   .class .class__contents .contents-title {
     text-align: center;
     top: 40%;
@@ -414,7 +415,7 @@
   .class .class__contents .contents-contents {
     display: none;
   }
-  .class .class__contents .t-btn {
-    bottom: 30px;
+  .class .class__contents .t-btn-wrap {
+    display: inline-block;
   }
 }

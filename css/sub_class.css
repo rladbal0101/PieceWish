@@ -1,0 +1,92 @@
+/* COMMON */
+section .inner h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 40px 0 30px;
+}
+section .inner ul li + li {
+  margin-top: 10px;
+}
+/* swiper 공통영역 */
+.swiper {
+  margin-top: 20px;
+  width: 100%;
+}
+.swiper-slide {
+  position: relative;
+}
+.swiper-slide img {
+  width: 100%;
+}
+
+.class-time {
+  margin-top: 10px;
+}
+/* CLASS */
+.sub__class {
+  margin-top: 156px;
+}
+.sub__class .inner h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-gr);
+  text-align: center;
+  padding: 50px 0;
+}
+.sub__class .inner img {
+  width: 100%;
+}
+.sub__class .inner p {
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+/* ONEDAY CLASS */
+.class--oneday .class-time :nth-child(1) {
+  color: red;
+  text-decoration: line-through;
+}
+.class--oneday .class-time :nth-child(3) {
+  color: red;
+  text-decoration: line-through;
+}
+
+/* MASTER CLASS */
+.class--master .class-time :nth-child(1) {
+  color: red;
+  text-decoration: line-through;
+}
+.class--master .class-time :nth-child(2) {
+  color: red;
+  text-decoration: line-through;
+}
+.class--master .class-time :nth-child(5) {
+  color: red;
+  text-decoration: line-through;
+}
+.class--master .inner p {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+/* 반응형 */
+/* 태블릿 */
+@media screen and (max-width: 1023px) {
+
+}
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  section {
+    font-size: 12px;
+  }
+  section .inner h4 {
+    font-size: 14px;
+  }
+  .sub__class {
+    margin-top: 50px;
+  }
+  .sub__class .inner h3 {
+    font-size: 14px;
+  }
+}
