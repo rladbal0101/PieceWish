@@ -319,6 +319,9 @@ footer .info p + p {
 /* 반응형 */
 /* 태블릿 */
 @media screen and (max-width: 1023px) {
+  .inner {
+    padding: 0 20px;
+  }
   footer .inner {
     width: 480px;
     margin: auto;
@@ -342,17 +345,23 @@ footer .info p + p {
 }
 /* 모바일 */
 @media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 10px;
+  }
   header .inner {
     display: none;
   }
   .m-header {
     display: block;
   }
+  footer {
+    margin-top: 20px;
+  }
   footer .inner .info {
     flex-direction: column;
   }
   footer ul > li + li {
-    margin-left: 10px;
+    margin-left: 20px;
   }
   footer .inner .info p:first-child {
     margin-left: 20px;
