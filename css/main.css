@@ -75,6 +75,7 @@
 .slide .material-icons {
   font-size: 40px;
   color: var(--color-white);
+  color: var(--color-text-gr);
   display: none;
 }
 .slide .swiper-button-prev::after,

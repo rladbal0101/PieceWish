@@ -348,6 +348,10 @@ footer .info p + p {
   .inner {
     padding: 0 10px;
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
   header .inner {
     display: none;
   }
