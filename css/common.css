@@ -348,4 +348,10 @@ footer .info p + p {
   .m-header {
     display: block;
   }
+  footer .inner .info {
+    flex-direction: column;
+  }
+  footer .inner .info p:first-child {
+    margin-left: 20px;
+  }
 }
