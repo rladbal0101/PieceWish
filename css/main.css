@@ -303,14 +303,15 @@
 .class .class__contents .t-btn {
   width: 28px;
   height: 28px;
-  text-align: center;
-  line-height: 28px;
   color: var(--color-text-hover);
   background-color: var(--color-background-w);
   border: 1px solid var(--color-text-hover);
   border-radius: 6px;
   box-sizing: border-box;
   display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   position: absolute;
   bottom: 12px;
