@@ -1,7 +1,7 @@
 /* COMMON */
 section .inner h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text);
   margin: 40px 0 30px;
 }
@@ -29,7 +29,7 @@ section .inner ul li + li {
 }
 .sub__class .inner h3 {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text-gr);
   text-align: center;
   padding: 50px 0;

@@ -1,0 +1,77 @@
+/* COMMON */
+section .inner h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-text-gr);
+  text-align: center;
+  padding: 50px 0;
+}
+.season .inner .season-contents {
+  display: flex;
+  line-height: 2.5;
+}
+.season .inner .season-contents img {
+  width: 50%;
+}
+.season .inner .season-contents .contents-wrap {
+  padding: 30px;
+}
+.season .inner .season-contents .contents-wrap h4 {
+  font-size: 26px;
+  color: var(--color-text-gr);
+}
+.season .inner .season-contents .contents-wrap p {
+  font-size: 18px;
+}
+.season .inner .season-contents .contents-wrap p:last-child {
+  margin-top: 20px;
+  font-weight: 700;
+  color: var(--color-text-hover);
+}
+/* 발렌타인·화이트데이 */
+#valentine-day {
+  margin-top: 156px;
+}
+/* 2,4번째 section  */
+#parents-day .season-contents,
+#christmas .season-contents {
+  flex-direction: row-reverse;
+}
+
+/* 반응형 */
+/* 태블릿 */
+@media screen and (max-width: 1023px) {
+  .season .inner .season-contents .contents-wrap h4 {
+    font-size: 22px;
+  }
+  .season .inner .season-contents .contents-wrap p {
+    font-size: 14px;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  section {
+    font-size: 12px;
+  }
+  .valentine-day {
+    margin-top: 50px;
+  }
+  section .inner h3 {
+    font-size: 14px;
+  }
+  .season .inner .season-contents {
+    flex-wrap: wrap;
+  }
+  .season .inner .season-contents img {
+    width: 100%;
+  }
+  .season .inner .season-contents .contents-wrap {
+    width: 100%;
+  }
+  .season .inner .season-contents .contents-wrap h4 {
+    font-size: 20px;
+  }
+  .season .inner .season-contents .contents-wrap p {
+    font-size: 12px;
+  }
+}

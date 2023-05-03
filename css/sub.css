@@ -5,7 +5,7 @@
 }
 .sub__order .inner h3 {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text-gr);
   text-align: center;
   padding: 50px 0;
@@ -15,7 +15,7 @@
 }
 .sub__order .inner .order-now a {
   width: 100px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text-hover);
 }
 .sub__order .inner img {
@@ -28,7 +28,7 @@
   position: relative;
 }
 .sub__order .inner .order__contents h4 {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text);
   margin: 40px 0 30px;
 }
@@ -61,14 +61,14 @@
 }
 .sub__order .inner .info {
   margin-top: 50px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text-hover);
 }
 
 /* 주문영역 */
 #order {
   margin-top: 50px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text-gr);
   text-align: center;
   padding: 30px 0;

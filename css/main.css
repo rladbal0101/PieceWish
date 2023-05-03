@@ -47,7 +47,7 @@
 }
 .slide .swiper-slide p {
   color: var(--color-white);
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -60,7 +60,7 @@
   opacity: 0.7;
 }
 .slide .swiper-slide-active:hover p {
-  color: var(--color-background);
+  color: var(--color-text-hover);
 }
 .slide .swiper-slide-active span {
   font-size: 34px;
@@ -168,8 +168,8 @@
   font-weight: 700;
   color: var(--color-text-hover);
   display: inline-block;
-  padding: 40px 0;
-  /* cursor: pointer; */
+  margin: 40px 0;
+  cursor: pointer;
 }
 .recommend .inner .recommend-title:hover {
   color: var(--color-background);

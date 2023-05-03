@@ -44,11 +44,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/sub.css">
+  <link rel="stylesheet" href="./css/sub_season.css">
 
   <!-- GSAP(https://cdnjs.com/) & ScrollToPlugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- ScrollMagic -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -57,7 +57,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script defer src="./js/common.js"></script>
-  <script defer src="./js/sub.js"></script>
 
 </head>
 <body>
@@ -170,186 +169,65 @@
     </div>
   </header>
 
-  <!-- 상세설명 -->
-  <section class="sub__order">
+  <!-- 발렌타인·화이트데이 -->
+  <section class="season" id="valentine-day">
     <div class="inner">
-      <h3>ORDER</h3>
-      <div class="order-now">
-        <a href="#order">바로 주문하기!</a>
+      <h3>발렌타인·화이트데이</h3>
+      <div class="season-contents">
+        <img src="./images/season-valentine.jpg" alt="발렌타인·화이트데이">
+        <div class="contents-wrap">
+          <h4>2/14 발렌타인데이</h4>
+          <p>좋아하는 친구들끼리 특히 여자가 남자에게 초콜릿 등을 선물하는 날</p>
+          <h4>3/14 화이트데이</h4>
+          <p>친구나 연인 사이에 사탕을 선물하며 좋아하는 마음을 전하는 날</p>
+          <p>피오유의 꽃으로 연인에게 특별한 하루를 선물하세요!</p>
+        </div>
       </div>
-      <ul class="order__contents">
-        <li class="handtied">
-          <h4 id="handtied">Handtied</h4>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/order-handtied1.jpg" alt="handtied1">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-handtied2.jpg" alt="handtied2">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-handtied3.jpg" alt="handtied3">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev">
-            <span class="material-icons">chevron_left</span>
-          </div>
-          <div class="swiper-button-next">
-            <span class="material-icons">chevron_right</span>
-          </div>
-          <p>꽃다발은 미니, 기본, 중형, 대형 사이즈로 원하시는 꽃이나 색감을 바탕으로 제작됩니다.</p>
-        </li>
-        <li class="basket">
-          <h4 id="basket">Basket</h4>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/order-basket1.jpg" alt="basket1">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-basket2.jpg" alt="basket2">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-basket3.jpg" alt="basket3">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev">
-            <span class="material-icons">chevron_left</span>
-          </div>
-          <div class="swiper-button-next">
-            <span class="material-icons">chevron_right</span>
-          </div>
-          <p>바구니는 미니, 중형, 대형, 프리미엄 사이즈로 원하시는 꽃이나 색감을 바탕으로 제작됩니다.</p>
-        </li>
-        <li class="bouquet">
-          <h4 id="bouquet">Bouquet</h4>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/order-bouquet1.jpg" alt="bouquet1">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-bouquet2.jpg" alt="bouquet2">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-bouquet3.jpg" alt="bouquet3">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-bouquet4.jpg" alt="bouquet4">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-bouquet5.jpg" alt="bouquet5">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-bouquet6.jpg" alt="bouquet6">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev">
-            <span class="material-icons">chevron_left</span>
-          </div>
-          <div class="swiper-button-next">
-            <span class="material-icons">chevron_right</span>
-          </div>
-          <p>부케는 최소 2주 전 미리 주문 가능합니다. 충분한 상담 후 원하시는 부케로 제작됩니다.</p>
-        </li>
-        <li class="moneybox">
-          <h4 id="moneybox">Moneybox</h4>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/order-moneybox1.jpg" alt="moneybox1">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-moneybox2.jpg" alt="moneybox2">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-moneybox3.jpg" alt="moneybox3">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-moneybox4.jpg" alt="moneybox4">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev">
-            <span class="material-icons">chevron_left</span>
-          </div>
-          <div class="swiper-button-next">
-            <span class="material-icons">chevron_right</span>
-          </div>
-          <p>머니박스는 사각, 원형으로 제작 가능하며 원하시는 꽃이나 색감을 바탕으로 제작됩니다.</p>
-        </li>
-        <li class="vase">
-          <h4 id="vase">Vase</h4>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/order-vase1.jpg" alt="vase1">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-vase2.jpg" alt="vase2">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-vase3.jpg" alt="vase3">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-vase4.jpg" alt="vase4">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-vase5.jpg" alt="vase5">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/order-vase6.jpg" alt="vase6">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev">
-            <span class="material-icons">chevron_left</span>
-          </div>
-          <div class="swiper-button-next">
-            <span class="material-icons">chevron_right</span>
-          </div>
-          <p>미니 베이스는 화병 포함 상품으로 언제든지 구매 가능합니다. 원하시는 색감과 사이즈 선택 후 주문 가능합니다.</p>
-        </li>
-      </ul>
-      <div class="info">여러 상품 주문시 문의바랍니다.</div>
     </div>
   </section>
 
-  <!-- 주문영역 -->
-  <section>
+  <!-- 어버이날·스승의날 -->
+  <section class="season" id="parents-day">
     <div class="inner">
-      <div id="order">
-        <h4>ORDER</h4>
-        <div class="input-group">
-          <div class="label-margin">
-            <label>필수선택</label>
-          </div>
-          <select name="product" id="product" class="select-box" onchange="categoryChange(this)">
-            <option selected disabled>상품선택</option>
-            <option value="handtied">Handtied</option>
-            <option value="basket">Basket</option>
-            <option value="bouquet">Bouquet</option>
-            <option value="moneybox">Moneybox</option>
-            <option value="vase">Vase</option>
-          </select>
-          <select name="size" id="size" class="select-box" onchange="sizeChange(this)">
-            <option selected disabled>사이즈</option>
-          </select>
+      <h3>어버이날·스승의날</h3>
+      <div class="season-contents">
+        <img src="./images/season-parents.jpg" alt="어버이날·스승의날">
+        <div class="contents-wrap">
+          <h4>5/8 어버이날</h4>
+          <p>어버이의 은혜에 감사하고, 어른과 노인을 공경하는 경로효친의 전통적 미덕을 기리는 법정기념일</p>
+          <h4>5/15 스승의날</h4>
+          <p>교권존중과 스승공경의 사회적 풍토를 조성하여 교원의 사기진작과 사회적 지위향상을 위하여 지정된 법정기념일</p>
+          <p>피오유의 꽃으로 부모님, 스승님께 특별한 하루를 선물하세요!</p>
         </div>
-        <div class="input-group">
-          <div class="label-margin">
-            <label>메시지카드(선택)</label>
-          </div>
-          <input type="text" class="message select-box" placeholder="30자 이내로 입력하세요" maxlength="30">
+      </div>
+    </div>
+  </section>
+
+  <!-- 빼빼로데이 -->
+  <section class="season" id="pepero-day">
+    <div class="inner">
+      <h3>빼빼로데이</h3>
+      <div class="season-contents">
+        <img src="./images/season-pepero.jpg" alt="빼빼로데이">
+        <div class="contents-wrap">
+          <h4>11/11</h4>
+          <p>친구나 연인 등 지인들끼리 '빼빼로' 과자를 주고받는 날</p>
+          <p>피오유의 꽃으로 연인에게 특별한 하루를 선물하세요!</p>
         </div>
-        <div class="total-price">
-          <div class="total-price__title">총 상품 금액</div>
-          <div class="total-price__price">0원</div>
-          <a href="javascript:void(0)" class="btn btn--order">주문하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 크리스마스 -->
+  <section class="season" id="christmas">
+    <div class="inner">
+      <h3>크리스마스</h3>
+      <div class="season-contents">
+        <img src="./images/season-christmas.jpg" alt="크리스마스">
+        <div class="contents-wrap">
+          <h4>12/25</h4>
+          <p>다가오는 연말 크리스마스 분위기의 테이블 데코는 어떠신가요?</p>
+          <p>피오유의 꽃으로 가족과 연인에게 특별한 하루를 선물하세요!</p>
         </div>
       </div>
     </div>
@@ -392,5 +270,6 @@
   <div id="to-top">
     <span class="material-icons">expand_less</span>
   </div>
+
 </body>
 </html>

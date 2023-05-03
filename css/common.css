@@ -10,10 +10,11 @@ html {
   
   scroll-behavior: smooth;
   cursor: url("../images/cursor.png") 15 16, auto;
-  
 }
 
 body {
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.4;
   font-size: 14px;
 }
 section {
