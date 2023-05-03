@@ -351,6 +351,9 @@ footer .info p + p {
   footer .inner .info {
     flex-direction: column;
   }
+  footer ul > li + li {
+    margin-left: 10px;
+  }
   footer .inner .info p:first-child {
     margin-left: 20px;
   }
