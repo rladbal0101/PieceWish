@@ -35,6 +35,7 @@ a {
   width: 80px;
   height: 36px;
   text-align: center;
+  line-height: 15px;
   color: var(--color-text-hover);
   background-color: var(--color-background-w);
   border: 1px solid var(--color-text-hover);
